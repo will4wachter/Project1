@@ -11,6 +11,7 @@ ITEM_CANNOT_BE_OBTAINEDX = 215; -- You cannot obtain the ?Possible Special Code:
  FISHING_MESSAGE_OFFSET = 857; -- You can't fish here
           HOMEPOINT_SET = 1312; -- Home point set!
           IMAGE_SUPPORT = 1345; -- Your ?Multiple Choice (Parameter 1)?[fishing/woodworking/smithing/goldsmithing/clothcraft/leatherworking/bonecraft/alchemy/cooking] skills went up ?Multiple Choice (Parameter 2)?[a little/ever so slightly/ever so slightly].?Prompt?
+	     
 
 -- Conquest system
 SANCTION = 9712; -- You have received the Empire's Sanction.

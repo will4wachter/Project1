@@ -30,6 +30,12 @@ end;
 
 function onTrigger(player,npc)
 	player:messageSpecial(SKY_GOD_OFFSET + 2);
+		stock = {
+			 0x58e,2500000,		--Gem of the West
+			 0x58f,2500000}		--Autumnstone
+
+showShop(player, STATIC ,stock);
+
 end; 
 
 -----------------------------------

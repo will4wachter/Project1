@@ -25,5 +25,5 @@ end;
 -----------------------------------------
 
 function onItemUse(target)
-	target:addExp(EXP_RATE * math.random(500,1000));
+	target:addExp(EXP_RATE * math.random(50,100));
 end;

@@ -30,6 +30,12 @@ end;
 
 function onTrigger(player,npc)
 	player:messageSpecial(SKY_GOD_OFFSET + 1);
+		stock = {
+			 0x58a,2500000,		--Gem of the East
+			 0x58b,2500000}		--Springstone
+
+showShop(player, STATIC ,stock);
+	
 end; 
 
 -----------------------------------

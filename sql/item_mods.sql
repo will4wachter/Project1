@@ -15997,6 +15997,7 @@ INSERT INTO `item_mods` VALUES(18270, 355, 26);
 INSERT INTO `item_mods` VALUES(18275, 356, 43);
 INSERT INTO `item_mods` VALUES(18276, 23, 20);
 INSERT INTO `item_mods` VALUES(18276, 355, 43);
+INSERT INTO `item_mods` VALUES(18276, 431, 1); -- Additional effect: Damage
 INSERT INTO `item_mods` VALUES(18281, 356, 57);
 INSERT INTO `item_mods` VALUES(18282, 25, 20);
 INSERT INTO `item_mods` VALUES(18282, 165, 5);

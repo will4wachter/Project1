@@ -30,6 +30,12 @@ end;
 
 function onTrigger(player,npc)
 	player:messageSpecial(SKY_GOD_OFFSET + 3);
+		stock = {
+			 0x58c,2500000,		--Gem of the South
+			 0x58d,2500000}		--Summerstone
+
+showShop(player, STATIC ,stock);
+
 end; 
 
 -----------------------------------

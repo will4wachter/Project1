@@ -132,75 +132,75 @@ void CMobEntity::SetDespawnTimer(uint32 duration)
 uint32 CMobEntity::GetRandomGil()
 {
 
-    int16 min = getMobMod(MOBMOD_GIL_MIN);
-    int16 max = getMobMod(MOBMOD_GIL_MAX);
+	int16 min = getMobMod(MOBMOD_GIL_MIN);
+	int16 max = getMobMod(MOBMOD_GIL_MAX);
 
-    if(min && max)
-    {
-        // make sure divide won't crash server
-        if(max <= min)
-        {
-            max = min+2;
-        }
+	if (min && max)
+	{
+		// make sure divide won't crash server
+		if (max <= min)
+		{
+			max = min + 1;
+		}
 
-        if(max-min < 2)
-        {
-            max = min+2;
-            ShowWarning("CMobEntity::GetRandomGil Max value is set too low, defauting\n");
-        }
+		if (max - min <= 2)
+		{
+			max = min + 2;
+			ShowWarning("CMobEntity::GetRandomGil Max value is set too low, defauting\n");
+		}
 
-        return rand()%(max-min)+min;
-    }
+		return rand() % (max - min) + min;
+	}
 
-    float gil = pow(GetMLevel(), 1.05f);
+	float gil = pow(GetMLevel(), 1.05f);
 
-    if(gil < 1){
-        gil = 1;
-    }
+	if (gil < 1){
+		gil = 1;
+	}
 
-    uint16 highGil = (float)(gil) / 3 + 4;
+	uint16 highGil = (float)(gil) / 3 + 4;
 
-    if(max)
-    {
-        highGil = max;
-    }
+	if (max)
+	{
+		highGil = max;
+	}
 
-    if(highGil < 2){
-        highGil = 2;
-    }
+	if (highGil < 2){
+		highGil = 2;
+	}
 
-    // randomize it
-	gil += rand()%highGil;
+	// randomize it
+	gil += rand() % highGil;
 
-    // NMs get more gil
-    if((m_Type & MOBTYPE_NOTORIOUS) == MOBTYPE_NOTORIOUS){
-        gil *= 10;
-    }
+	// NMs get more gil
+	if ((m_Type & MOBTYPE_NOTORIOUS) == MOBTYPE_NOTORIOUS){
+		gil *= 10;
+	}
 
-    // thfs drop more gil
-    if(GetMJob() == JOB_THF){
-        gil = (float)gil * 1.5;
-    }
+	// thfs drop more gil
+	if (GetMJob() == JOB_THF){
+		gil = (float)gil * 1.5;
+	}
 
-    if(min && gil < min)
-    {
-        gil = min;
-    }
+	if (min && gil < min)
+	{
+		gil = min;
+	}
 
-    return gil;
+	return gil;
 }
 
 bool CMobEntity::CanDropGil()
 {
-    // smaller than 0 means drop no gil
-    if(getMobMod(MOBMOD_GIL_MAX) < 0) return false;
+	// smaller than 0 means drop no gil
+	if (getMobMod(MOBMOD_GIL_MAX) < 0) return true;
 
-    if(getMobMod(MOBMOD_GIL_MIN) > 0 || getMobMod(MOBMOD_GIL_MAX))
-    {
-        return true;
-    }
+	if (getMobMod(MOBMOD_GIL_MIN) > 0 || getMobMod(MOBMOD_GIL_MAX))
+	{
+		return true;
+	}
 
-    return m_EcoSystem == SYSTEM_BEASTMEN;
+	return m_EcoSystem == SYSTEM_BEASTMEN, SYSTEM_BEAST;
 }
 
 bool CMobEntity::CanRoamHome()

@@ -24,22 +24,37 @@ function onTrigger(player,npc)
 
 player:showText(npc,QUELPIA_SHOP_DIALOG);
 
-stock = {0x1202,585,		-- Scroll of Cure II
-	 0x1203,3261,		-- Scroll of Cure III
-	 0x1208,10080,		-- Scroll of Curaga II
-	 0x120C,5178,		-- Scroll of Raise
-	 0x1215,31500,		-- Scroll of Holy
-	 0x1218,10080,		-- Scroll of Dia II
-	 0x121D,8100,		-- Scroll of Banish II
-	 0x122C,6366,		-- Scroll of Protect II
-	 0x1231,15840,		-- Scroll of Shell II
-	 0x1239,18000,		-- Scroll of Haste
-	 0x1264,4644,		-- Scroll of Enfire
-	 0x1265,3688,		-- Scroll of Enblizzard
-	 0x1266,2250,		-- Scroll of Enaero
-	 0x1267,1827,		-- Scroll of Enstone
-	 0x1268,1363,		-- Scroll of Enthunder
-	 0x1269,6366}		-- Scroll of Enwater
+stock = {0x1200,2510,		-- Scroll of Cure
+	 0x1202,5850,		-- Scroll of Cure II
+	 0x1203,32610,		-- Scroll of Cure III
+	 0x1204,123210,		-- Scroll of Cure IV
+	 0x1205,503340,		-- Scroll of Cure V
+	 0x1207,35023,		-- Scroll of Curaga
+	 0x1208,100800,		-- Scroll of Curaga II
+	 0x1209,287092,		-- Scroll of Curaga III
+	 0x120C,51780,		-- Scroll of Raise
+	 0x120d,175930,		-- Scroll of Raise II
+	 0x1215,315000,		-- Scroll of Holy
+	 0x1218,100800,		-- Scroll of Dia II
+	 0x121D,81000,		-- Scroll of Banish II
+	 0x122b,4302,		-- Scroll of Protect
+	 0x122C,13660,		-- Scroll of Protect II
+	 0x122d,35010,		-- Scroll of Protect III
+	 0x122e,89120,		-- Scroll of Protect IV
+	 0x1230,3540,		-- Scroll of Shell
+	 0x1231,18400,		-- Scroll of Shell II
+	 0x1232,56290,		-- Scroll of Shell III	
+	 0x1233,178320,		-- Scroll of Shell IV
+	 0x126c,3420,		-- Scroll of Regen
+	 0x126e,48320,		-- Scroll of Regen II
+	 0x126f,186323,		-- Scroll of Regen III
+	 0x126d,1020321,	-- Scroll of Refresh
+	 0x1239,180000,		-- Scroll of Haste
+	 0x126a,192830,		-- Scroll of Phalanx
+	 0x1236,57830,		-- Scroll of Stoneskin
+	 0x1235,48230}		-- Scroll of Blink
+
+	
 
 showShop(player, STATIC, stock);
 end;

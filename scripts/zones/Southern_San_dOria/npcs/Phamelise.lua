@@ -32,25 +32,21 @@ end;
 -- onTrigger Action
 -----------------------------------
 
+
 function onTrigger(player,npc)
+	
+player:showText(npc,PHAMELISE_OPEN_DIALOG);
 
-	RegionOwner = GetRegionOwner(ZULKHEIM);
+		stock = {0x466,20202, -- Beastmen Seal
+			 0x467,50505,       --Kindreds seal
+			 0xD0B,7500000,		--Fafnir pop
+			 0xD0C,15000000,       --Nidhogg pop
+			 0xD0D,1000000,		--Behemoth pop
+			 0xD0E,15000000,	--KB Pop
+			 0xD0F,1000000,		--Adaman pop
+			 0xD10,15000000}	--Aspid pop
 
-	if (RegionOwner ~= SANDORIA) then
-		player:showText(npc,PHAMELISE_CLOSED_DIALOG);
-	else
-		player:showText(npc,PHAMELISE_OPEN_DIALOG);
-
-		stock = {0x1114,44,       --Giant Sheep Meat
-						 0x026e,44,       --Dried Marjoram
-						 0x0262,55,       --San d'Orian Flour
-						 0x0263,36,       --Rye Flour
-						 0x0730,1840, --Semolina
-						 0x110e,22,       --La Theine Cabbage
-						 0x111a,55}       --Selbina Milk
-
-		showShop(player,SANDORIA,stock);
-	end
+showShop(player, STATIC ,stock);
 
 end;
 

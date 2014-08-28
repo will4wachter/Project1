@@ -39,6 +39,12 @@ end;
 
 function onTrigger(player,npc)
 	player:messageSpecial(NOTHING_OUT_OF_ORDINARY);
+			stock = {		 
+			0xD0B,7500000,		--Fafnir pop
+			0xD0C,15000000}       	--Nidhogg pop
+
+showShop(player, STATIC ,stock);
+
 end;
 
 -----------------------------------

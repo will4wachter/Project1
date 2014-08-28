@@ -523,6 +523,7 @@ public:
 	ECOSYSTEM		m_EcoSystem;			    // эко-система сущности
 	CItemWeapon*	m_Weapons[4];			    // четыре основных ячейки, используемыж для хранения оружия (только оружия)
 
+
     TraitList_t       TraitList;                    // список постянно активных способностей в виде указателей
 
 	EntityID_t	    m_OwnerID;				    // ID атакующей сущности (после смерти будет хранить ID сущности, нанесщей последний удар)
@@ -532,6 +533,7 @@ public:
     CParty*			PParty;					    // описание группы, в которой состоит сущность
 	CBattleEntity*	PPet;					    // питомец сущности
 	CBattleEntity*	PMaster;				    // владелец/хозяин сущности (распространяется на все боевые сущности)
+
 
 	CStatusEffectContainer* StatusEffectContainer;
 

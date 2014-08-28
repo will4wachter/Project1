@@ -2,7 +2,6 @@
 
 require("scripts/globals/settings");
 require("scripts/globals/conquest");
--- require("scripts/globals/teleports");
 require("scripts/globals/status");
 require("scripts/globals/regimereward");
 require("scripts/globals/regimeinfo");

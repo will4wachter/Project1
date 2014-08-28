@@ -46,6 +46,12 @@ function onTrigger(player,npc)
 		player:setVar("MissionStatus",2);
 	else
 		player:messageSpecial(NOTHING_OUT_OF_ORDINARY);
+		stock = {
+			 0xD0F,3000000,		--Adaman pop
+			 0xD10,15000000}	--Aspid pop
+
+showShop(player, STATIC ,stock);
+
 	end
 end;
 

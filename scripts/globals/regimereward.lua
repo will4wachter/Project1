@@ -1,4 +1,6 @@
 -------------------------------------------------
+require("scripts/globals/settings");
+-------------------------------------------------
 -- Regime Reward Database(s)
 -------------------------------------------------
 
@@ -9,460 +11,460 @@ function getFoVregimeReward(regimeid)
     if (regimeid<=50) then
         if(regimeid<=10) then
             if (regimeid==1) then
-                return 270;
+                return 900;
             end
             if (regimeid==2) then
-                return 285;
+                return 950;
             end
             if (regimeid==3) then
-                return 300;
+                return 1000;
             end
             if (regimeid==4) then
-                return 315;
+                return 1050;
             end
             if (regimeid==5) then
-                return 330;
+                return 1100;
             end
             if (regimeid==6) then
-                return 390;
+                return 1300;
             end
             if (regimeid==7) then
-                return 475;
+                return 1583;
             end
             if (regimeid==8) then
-                return 500;
+                return 1666;
             end
             if (regimeid==9) then
-                return 525;
+                return 1750;
             end
             if (regimeid==10) then
-                return 550;
+                return 1833;
             end
         elseif (regimeid>10 and regimeid<=20) then
             if (regimeid==11) then
-                return 540;
+                return 1800;
             end
             if (regimeid==12) then
-                return 570;
+                return 1900;
             end
             if (regimeid==13) then
-                return 600;
+                return 2000;
             end
             if (regimeid==14) then
-                return 630;
+                return 2100;
             end
             if (regimeid==15) then
-                return 670;
+                return 2233;
             end
             if (regimeid==16) then
-                return 270;
+                return 900;
             end
             if (regimeid==17) then
-                return 285;
+                return 950;
             end
             if (regimeid==18) then
-                return 300;
+                return 1000;
             end
             if (regimeid==19) then
-                return 315;
+                return 1050;
             end
             if (regimeid==20) then
-                return 330;
+                return 1100;
             end
         elseif (regimeid>20 and regimeid<=30) then
             if (regimeid==21) then
-                return 540;
+                return 1800;
             end
             if (regimeid==22) then
-                return 570;
+                return 1900;
             end
             if (regimeid==23) then
-                return 600;
+                return 2000;
             end
             if (regimeid==24) then
-                return 630;
+                return 2100;
             end
             if (regimeid==25) then
-                return 690;
+                return 2300;
             end
             if (regimeid==26) then
-                return 270;
+                return 900;
             end
             if (regimeid==27) then
-                return 285;
+                return 950;
             end
             if (regimeid==28) then
-                return 300;
+                return 1000;
             end
             if (regimeid==29) then
-                return 315;
+                return 1050;
             end
             if (regimeid==30) then
-                return 330;
+                return 1100;
             end
         elseif (regimeid>30 and regimeid<=40) then
             if (regimeid==31) then
-                return 450;
+                return 1500;
             end
             if (regimeid==32) then
-                return 475;
+                return 1583;
             end
             if (regimeid==33) then
-                return 500;
+                return 1666;
             end
             if (regimeid==34) then
-                return 525;
+                return 1750;
             end
             if (regimeid==35) then
-                return 550;
+                return 1833;
             end
             if (regimeid==36) then
-                return 540;
+                return 1800;
             end
             if (regimeid==37) then
-                return 570;
+                return 1900;
             end
             if (regimeid==38) then
-                return 600;
+                return 2000;
             end
             if (regimeid==39) then
-                return 630;
+                return 2100;
             end
             if (regimeid==40) then
-                return 690;
+                return 2300;
             end
         else --Regime between 41-50
             if (regimeid==41) then
-                return 630;
+                return 2100;
             end
             if (regimeid==42) then
-                return 665;
+                return 2216;
             end
             if (regimeid==43) then
-                return 700;
+                return 2333;
             end
             if (regimeid==44) then
-                return 735;
+                return 2450;
             end
             if (regimeid==45) then
-                return 770;
+                return 2566;
             end
             if (regimeid==46) then
-                return 810;
+                return 2700;
             end
             if (regimeid==47) then
-                return 855;
+                return 2850;
             end
             if (regimeid==48) then
-                return 900;
+                return 3000;
             end
             if (regimeid==49) then
-                return 945;
+                return 3150;
             end
             if (regimeid==50) then
-                return 990;
+                return 3300;
             end
         end
     elseif (regimeid>50 and regimeid<=100) then
         if (regimeid>50 and regimeid<=60) then
             if (regimeid==51) then
-                return 900;
+                return 3000;
             end
             if (regimeid==52) then
-                return 950;
+                return 3166;
             end
             if (regimeid==53) then
-                return 1000;
+                return 3500;
             end
             if (regimeid==54) then
-                return 1050;
+                return 3550;
             end
             if (regimeid==55) then
-                return 1100;
+                return 3750;
             end
             if (regimeid==56) then
-                return 330;
+                return 1100;
             end
             if (regimeid==57) then
-                return 575;
+                return 1950;
             end
             if (regimeid==58) then
-                return 480;
+                return 1600;
             end
             if (regimeid==59) then
-                return 330;
+                return 1100;
             end
             if (regimeid==60) then
-                return 660;
+                return 2200;
             end
         elseif (regimeid>60 and regimeid<=70) then
             if (regimeid==61) then
-                return 330;
+                return 1100;
             end
             if (regimeid==62) then
-                return 575;
+                return 1950;
             end
             if (regimeid==63) then
-                return 660;
+                return 2200;
             end
             if (regimeid==64) then
-                return 270;
+                return 900;
             end
             if (regimeid==65) then
-                return 285;
+                return 950;
             end
             if (regimeid==66) then
-                return 300;
+                return 1000;
             end
             if (regimeid==67) then
-                return 315;
+                return 1050;
             end
             if (regimeid==68) then
-                return 330;
+                return 1100;
             end
             if (regimeid==69) then
-                return 360;
+                return 1200;
             end
             if (regimeid==70) then
-                return 420;
+                return 1400;
             end
         elseif (regimeid>70 and regimeid<=80) then
             if (regimeid==71) then
-                return 450;
+                return 1500;
             end
             if (regimeid==72) then
-                return 630;
+                return 2100;
             end
             if (regimeid==73) then
-                return 650;
+                return 2200;
             end
             if (regimeid==74) then
-                return 700;
+                return 2350;
             end
             if (regimeid==75) then
-                return 730;
+                return 2450;
             end
             if (regimeid==76) then
-                return 270;
+                return 900;
             end
             if (regimeid==77) then
-                return 285;
+                return 950;
             end
             if (regimeid==78) then
-                return 300;
+                return 1000;
             end
             if (regimeid==79) then
-                return 315;
+                return 1050;
             end
             if (regimeid==80) then
-                return 330;
+                return 1100;
             end
         elseif (regimeid>80 and regimeid<=90) then
             if (regimeid==81) then
-                return 340;
+                return 1150;
             end
             if (regimeid==82) then
-                return 360;
+                return 1200;
             end
             if (regimeid==83) then
-                return 380;
+                return 1250;
             end
             if (regimeid==84) then
-                return 400;
+                return 1400;
             end
             if (regimeid==85) then
-                return 670;
+                return 2250;
             end
             if (regimeid==86) then
-                return 710;
+                return 2400;
             end
             if (regimeid==87) then
-                return 740;
+                return 2450;
             end
             if (regimeid==88) then
-                return 800;
+                return 2700;
             end
             if (regimeid==89) then
-                return 270;
+                return 900;
             end
             if (regimeid==90) then
-                return 285;
+                return 950;
             end
         else --Regime 91-100
             if (regimeid==91) then
-                return 300;
+                return 1000;
             end
             if (regimeid==92) then
-                return 315;
+                return 1150;
             end
             if (regimeid==93) then
-                return 330;
+                return 1100;
             end
             if (regimeid==94) then
-                return 315;
+                return 1050;
             end
             if (regimeid==95) then
-                return 370;
+                return 1250;
             end
             if (regimeid==96) then
-                return 475;
+                return 1585;
             end
             if (regimeid==97) then
-                return 710;
+                return 2400;
             end
             if (regimeid==98) then
-                return 710;
+                return 2400;
             end
             if (regimeid==99) then
-                return 730;
+                return 2450;
             end
             if (regimeid==100) then
-                return 770;
+                return 2550;
             end
         end
     elseif (regimeid>100) then
         if (regimeid>100 and regimeid<=110) then
             if (regimeid==101) then
-                return 350;
+                return 1150;
             end
             if (regimeid==102) then
-                return 400;
+                return 1350;
             end
             if (regimeid==103) then
-                return 450;
+                return 1500;
             end
             if (regimeid==104) then
-                return 1300;
+                return 4200;
             end
             if (regimeid==105) then
-                return 1320;
+                return 4400;
             end
             if (regimeid==106) then
-                return 1340;
+                return 4500;
             end
             if (regimeid==107) then
-                return 1390;
+                return 4700;
             end
             if (regimeid==108) then
-                return 1450;
+                return 5000;
             end
             if (regimeid==109) then
-                return 810;
+                return 2700;
             end
             if (regimeid==110) then
-                return 830;
+                return 2800;
             end
         elseif (regimeid>110 and regimeid<=120) then
             if (regimeid==111) then
-                return 870;
+                return 2900;
             end
             if (regimeid==112) then
-                return 950;
+                return 3200;
             end
             if (regimeid==113) then
-                return 970;
+                return 3300;
             end
             if (regimeid==114) then
-                return 900;
+                return 3000;
             end
             if (regimeid==115) then
-                return 940;
+                return 3200;
             end
             if (regimeid==116) then
-                return 980;
+                return 3300;
             end
             if (regimeid==117) then
-                return 1020;
+                return 3400;
             end
             if (regimeid==118) then
-                return 1100;
+                return 3700;
             end
             if (regimeid==119) then
-                return 1300;
+                return 4350;
             end
             if (regimeid==120) then
-                return 1330;
+                return 4450;
             end
         elseif (regimeid>120 and regimeid<=130) then
             if (regimeid==121) then
-                return 1360;
+                return 4600;
             end
             if (regimeid==122) then
-                return 1540;
+                return 5150;
             end
             if (regimeid==123) then
-                return 1540;
+                return 5150;
             end
             if (regimeid==124) then
-                return 820;
+                return 2750;
             end
             if (regimeid==125) then
-                return 840;
+                return 2800;
             end
             if (regimeid==126) then
-                return 860;
+                return 2900;
             end
             if (regimeid==127) then
-                return 880;
+                return 2950;
             end
             if (regimeid==128) then
-                return 920;
+                return 3050;
             end
             if (regimeid==129) then
-                return 840;
+                return 2800;
             end
             if (regimeid==130) then
-                return 880;
+                return 2950;
             end
         elseif (regimeid>130 and regimeid<=140) then
             if (regimeid==131) then
-                return 920;
+                return 3000;
             end
             if (regimeid==132) then
-                return 940;
+                return 3200;
             end
             if (regimeid==133) then
-                return 1000;
+                return 3500;
             end
             if (regimeid==134) then
-                return 920;
+                return 3100;
             end
             if (regimeid==135) then
-                return 980;
+                return 3300;
             end
             if (regimeid==136) then
-                return 1020;
+                return 3400;
             end
             if (regimeid==137) then
-                return 1080;
+                return 3600;
             end
             if (regimeid==138) then
-                return 1140;
+                return 3800;
             end
             if (regimeid==139) then
-                return 1220;
+                return 4100;
             end
             if (regimeid==140) then
-                return 1260;
+                return 4200;
             end
         else --Regime 140-146
             if (regimeid==141) then
-                return 1300;
+                return 4400;
             end
             if (regimeid==142) then
-                return 1450;
+                return 4850;
             end
             if (regimeid==143) then
-                return 1500;
+                return 5000;
             end
             if (regimeid==144) then
-                return 1550;
+                return 5500;
             end
             if (regimeid==145) then
-                return 1600;
+                return 6000;
             end
             if (regimeid==146) then
-                return 1600;
+                return 6000;
             end
         end
         --print("Warning: Regime ID not found! Returning reward as 10.");

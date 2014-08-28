@@ -9,7 +9,6 @@
 package.loaded["scripts/zones/Uleguerand_Range/TextIDs"] = nil;
 -----------------------------------
 
-require("scripts/globals/keyitems");
 require("scripts/zones/Uleguerand_Range/TextIDs");
 
 -----------------------------------
@@ -28,7 +27,5 @@ function onTrigger(player,npc)
 	if (player:hasKeyItem(MYSTIC_ICE) == false) then
 		player:addKeyItem(MYSTIC_ICE);
 		player:messageSpecial(KEYITEM_OBTAINED,MYSTIC_ICE);
-	else
-		player:messageSpecial(NOTHING_OUT_OF_ORDINARY);
 	end
 end;

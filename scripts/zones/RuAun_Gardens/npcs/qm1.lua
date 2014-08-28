@@ -30,6 +30,11 @@ end;
 
 function onTrigger(player,npc)
 	player:messageSpecial(SKY_GOD_OFFSET);
+		stock = {
+			 0x590,2500000,		--Gem of the North
+			 0x591,2500000}		--Winterstone
+
+showShop(player, STATIC ,stock);
 end; 
 
 -----------------------------------

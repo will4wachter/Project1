@@ -42,6 +42,12 @@ end;
 
 function onTrigger(player,npc)
 	player:messageSpecial(IRREPRESSIBLE_MIGHT);
+			stock = {		 
+			 0xD0D,3000000,		--Behemoth pop
+			 0xD0E,15000000}	--KB Pop
+
+showShop(player, STATIC ,stock);
+
 end;
 
 -----------------------------------

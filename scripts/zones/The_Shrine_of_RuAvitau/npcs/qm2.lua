@@ -34,7 +34,14 @@ end;
 -----------------------------------
 
 function onTrigger(player,npc)
-	player:startEvent(0x0064);
+		stock = {
+			 0x57c,3000000,		--Seal of Genbu
+			 0x57d,3000000,		--Seal of Seiryu
+			 0x57e,3000000,		--Seal of Byakko
+			 0x57f,3000000}		--Seal of Suzaku
+
+showShop(player, STATIC ,stock);
+
 end;
 
 -----------------------------------

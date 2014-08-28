@@ -237,7 +237,7 @@ function SetTimedSpawns()
 
     SetRespawnTimes(NMs, 900, 10800); -- 15 minutes to 3 hours
     SetRespawnTimes(NM2, 75600, 86400); -- 21 to 24 hours
-    SetRespawnTimes(NM3, 86400, 259200); -- 24 to 72 hours
+    SetRespawnTimes(NM3, 900, 10800); -- 24 to 72 hours
 end;
 
 function SetRespawnTimes(ids, minTime, maxTime)

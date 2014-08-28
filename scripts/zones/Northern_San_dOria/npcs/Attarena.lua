@@ -34,18 +34,16 @@ end;
 
 function onTrigger(player,npc)
 
-RegionOwner = GetRegionOwner(LITELOR);
-
-        if (RegionOwner ~= SANDORIA) then
-                player:showText(npc,ATTARENA_CLOSED_DIALOG);
-        else
-                player:showText(npc,ATTARENA_OPEN_DIALOG);
-
-                stock = {0x026f,119,            -- Bay Leaves
-                                 0x103a,6440}           -- Holy Water
-
-                showShop(player,SANDORIA,stock);
-        end
+	player:addItem(11811);
+	player:addItem(10293);
+	player:addItem(15793);
+	player:messageSpecial(ITEM_OBTAINED,11811);
+	player:messageSpecial(ITEM_OBTAINED,10293);
+	player:messageSpecial(ITEM_OBTAINED,15793);
+	player:addFame(BASTOK,  BAS_FAME*30);
+	player:addFame(SANDORIA,SAN_FAME*30);
+	player:addFame(WINDURST,WIN_FAME*30);
+	player:addFame(NORG,    NORG_FAME*30);
 end;
 
 -----------------------------------

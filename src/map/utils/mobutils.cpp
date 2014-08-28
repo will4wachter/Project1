@@ -808,6 +808,32 @@ void InitializeMob(CMobEntity* PMob, CZone* PZone)
 		}
 	}
 
+	if (PMob->m_maxLevel < 10)
+	{
+		PMob->setMobMod(MOBMOD_GIL_MIN, 1000);
+		PMob->setMobMod(MOBMOD_GIL_MAX, 2000);
+	}
+	if (PMob->m_maxLevel > 20)
+	{
+		PMob->setMobMod(MOBMOD_GIL_MIN, 2000);
+		PMob->setMobMod(MOBMOD_GIL_MAX, 4000);
+	}
+	if (PMob->m_maxLevel > 30)
+	{
+		PMob->setMobMod(MOBMOD_GIL_MIN, 4000);
+		PMob->setMobMod(MOBMOD_GIL_MAX, 8000);
+	}
+	if (PMob->m_maxLevel > 50)
+	{
+		PMob->setMobMod(MOBMOD_GIL_MIN, 8000);
+		PMob->setMobMod(MOBMOD_GIL_MAX, 16000);
+	}
+	if (PMob->m_maxLevel > 60)
+	{
+		PMob->setMobMod(MOBMOD_GIL_MIN, 16000);
+		PMob->setMobMod(MOBMOD_GIL_MAX, 32000);
+	}
+
 	PMob->m_Immunity |= PMob->getMobMod(MOBMOD_IMMUNITY);
 
 	PMob->defaultMobMod(MOBMOD_SKILLS, PMob->m_Family);

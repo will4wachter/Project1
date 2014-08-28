@@ -70,7 +70,7 @@ FERDOULEMIONT_SHOP_DIALOG = 7895; -- Hello!
 
     MACHIELLE_OPEN_DIALOG = 8350; -- Might I interest you in produce from Norvallen?
         CORUA_OPEN_DIALOG = 8351; -- Ronfaure produce for sale!
-    PHAMELISE_OPEN_DIALOG = 8352; -- I've got fresh produce from Zulkheim!
+    PHAMELISE_OPEN_DIALOG = 8352; -- Wacen gave me these but you can have them... for a price...
    APAIREMANT_OPEN_DIALOG = 8353; -- Might you be interested in produce from Gustaberg
 
      PAUNELIE_SHOP_DIALOG = 8249; -- These magic shells are full of mysteries...

@@ -18,7 +18,16 @@ end;
 -----------------------------------
 
 function onTrigger(player,npc)
-	player:startEvent(0x10b);
+	player:addItem(11811);
+	player:addItem(10293);
+	player:addItem(15793);
+	player:messageSpecial(ITEM_OBTAINED,11811);
+	player:messageSpecial(ITEM_OBTAINED,10293);
+	player:messageSpecial(ITEM_OBTAINED,15793);
+	player:addFame(BASTOK,  BAS_FAME*30);
+	player:addFame(SANDORIA,SAN_FAME*30);
+	player:addFame(WINDURST,WIN_FAME*30);
+	player:addFame(NORG,    NORG_FAME*30);
 end;
 
 -----------------------------------

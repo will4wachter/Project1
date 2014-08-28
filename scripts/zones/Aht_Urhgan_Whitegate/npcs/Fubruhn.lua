@@ -118,6 +118,7 @@ function onTrigger(player,npc)
         MOGLOCKER_ALLAREAS_VALID_DAYS);
     else
         player:startEvent(0x0258);
+	player:delStatusEffect(EFFECT_FOOD);
 	end
 	
 end; 
