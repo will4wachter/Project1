@@ -2847,7 +2847,7 @@ INSERT INTO `mob_skill` VALUES (2413,475,1883,'Darkmatter',1,20.0,4000,1500,4,0,
 INSERT INTO `mob_skill` VALUES (2415,475,1884,'Supernova',1,20.0,5000,3500,4,0,0,0); -- 33% and below
 
 -- Absoulute Virtue  (329)
-INSERT INTO `mob_skill` VALUES (1130,329,1021,'Medusa_Javelin',0,6.0,2000,1500,1,0);
+INSERT INTO `mob_skill` VALUES (1130,329,1021,'Medusa_Javelin',0,7.0,2000,1500,1,0,0,0);
 
 
 
