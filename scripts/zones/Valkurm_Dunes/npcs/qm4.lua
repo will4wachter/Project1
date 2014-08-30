@@ -14,6 +14,14 @@ require("scripts/zones/Valkurm_Dunes/TextIDs");
 -----------------------------------
 
 function onTrade(player,npc,trade)
+	-- Trade Anniversary Ring
+		-- Trade Anniversary Ring
+	if(trade:hasItemQty(15793,1) and trade:getItemCount() == 1) then
+			player:tradeComplete();
+			player:addStatusEffect(EFFECT_DEDICATION,1000,0,3600,0,30000);
+			
+	end
+
 end;
 
 -----------------------------------
