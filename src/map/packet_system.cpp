@@ -3143,18 +3143,26 @@ Sql_QueryStr(SqlHandle, cC);
 break;
 case MESSAGE_YELL:
 {
-if (map_config.audit_chat == 1 && map_config.audit_yell == 1)
-{
-std::string qStr = ("INSERT into audit_chat (speaker,type,message,datetime) VALUES('");
-qStr +=PChar->GetName();
-qStr +="','YELL','";
-qStr += escape(data+6);
-qStr +="',current_timestamp());";
-const char * cC = qStr.c_str();
-Sql_QueryStr(SqlHandle, cC);
+	if (map_config.audit_chat == 1 && map_config.audit_yell == 1)
+	{
+		std::string qStr = ("INSERT into audit_chat (speaker,type,message,datetime) VALUES('");
+		qStr += PChar->GetName();
+		qStr += "','YELL','";
+		qStr += escape(data + 6);
+		qStr += "',current_timestamp());";
+		const char * cC = qStr.c_str();
+		Sql_QueryStr(SqlHandle, cC);
+	}
+	for (uint16 zone = 0; zone < MAX_ZONEID; ++zone)
+	{
+		zoneutils::GetZone(zone)->PushPacket(
+			PChar,
+			CHAR_INZONE,
+			new CChatMessagePacket(PChar, MESSAGE_SHOUT, data + 6));
+	}
+	//PChar->pushPacket(new CMessageStandardPacket(PChar, 0, 256));
 }
-PChar->pushPacket(new CMessageStandardPacket(PChar, 0, 256));
-}break;
+	break;
 }
 }
 }
