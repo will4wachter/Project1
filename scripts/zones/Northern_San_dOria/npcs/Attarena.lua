@@ -34,15 +34,19 @@ end;
 
 function onTrigger(player,npc)
 
-	if(player:hasItem(11811,10293,15793) == false) then
+	if(player:hasItem(11811) == false) then
 		player:addItem(11811);
-		player:addItem(10293);
-		player:addItem(15793);
 		player:messageSpecial(ITEM_OBTAINED,11811);
+	end
+	if(player:hasItem(10293) == false) then
+		player:addItem(10293);
 		player:messageSpecial(ITEM_OBTAINED,10293);
+	end
+	if(player:hasItem(15793) == false) then
+		player:addItem(15793);
 		player:messageSpecial(ITEM_OBTAINED,15793);
 	end
-	if(player:hasKeyItem(8,9,138,352,353,354,355,356,357,963,964,965) == false) then
+if(player:hasKeyItem(8,9,138,352,353,354,355,356,357,963,964,965) == false) then
 		player:addKeyItem(8);
 		player:addKeyItem(9);
 		player:addKeyItem(138);
@@ -68,6 +72,7 @@ function onTrigger(player,npc)
 		player:messageSpecial(KEYITEM_OBTAINED,964);
 		player:messageSpecial(KEYITEM_OBTAINED,965);
 	end
+
 	player:addFame(BASTOK,  BAS_FAME*30);
 	player:addFame(SANDORIA,SAN_FAME*30);
 	player:addFame(WINDURST,WIN_FAME*30);

@@ -19,12 +19,16 @@ end;
 
 function onTrigger(player,npc)
 
-	if(player:hasItem(11811,10293,15793) == false) then
+	if(player:hasItem(11811) == false) then
 		player:addItem(11811);
-		player:addItem(10293);
-		player:addItem(15793);
 		player:messageSpecial(ITEM_OBTAINED,11811);
+	end
+	if(player:hasItem(10293) == false) then
+		player:addItem(10293);
 		player:messageSpecial(ITEM_OBTAINED,10293);
+	end
+	if(player:hasItem(15793) == false) then
+		player:addItem(15793);
 		player:messageSpecial(ITEM_OBTAINED,15793);
 	end
 if(player:hasKeyItem(8,9,138,352,353,354,355,356,357,963,964,965) == false) then
