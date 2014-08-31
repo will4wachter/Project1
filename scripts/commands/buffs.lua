@@ -16,8 +16,8 @@ function onTrigger(player)
         
         -- Add bonus effects to the player..
         player:addStatusEffect(EFFECT_REGAIN,10,1,0);
-        player:addStatusEffect(EFFECT_REFRESH,50,0,0);
-        player:addStatusEffect(EFFECT_REGEN,50,0,0);
+        player:addStatusEffect(EFFECT_REFRESH,10,0,0);
+        player:addStatusEffect(EFFECT_REGEN,10,0,0);
 	player:addStatusEffect(EFFECT_HASTE,100,0,0);
         
         -- Add bonus mods to the player..
