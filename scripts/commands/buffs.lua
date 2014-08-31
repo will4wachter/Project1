@@ -41,15 +41,6 @@ function onTrigger(player)
         player:delStatusEffect(EFFECT_REGEN,50,0,0);
 	player:delStatusEffect(EFFECT_HASTE,100,0,0);
         
-        -- Add bonus mods to the player..
-        player:delMod(MOD_RACC,150);
-        player:delMod(MOD_RATT,150);
-        player:delMod(MOD_ACC,150);
-        player:delMod(MOD_ATT,150);
-        player:delMod(MOD_MATT,150);
-        player:delMod(MOD_MACC,150);
-        player:delMod(MOD_RDEF,150);
-        player:delMod(MOD_DEF,150);
-        player:delMod(MOD_MDEF,150);
+
     end
 end
