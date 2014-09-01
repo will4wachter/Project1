@@ -66,6 +66,7 @@ end;
 
 function onMobDeath(mob, killer)
 	killer:addTitle(WORLD_SERPENT_SLAYER);
+	killer:addGil(math.random(75000000,100000000));
     UpdateNMSpawnPoint(mob:getID());
     mob:setRespawnTime(math.random((180),(360)));	-- 3 to 5 days
 end;

@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 -- func: buffs
--- desc: Toggles god mode on the player; granting them several special abilities.
+-- desc: Toggles Buffs on the player; granting them several special abilities.
 ---------------------------------------------------------------------------------------------------
 
 cmdprops =
@@ -10,9 +10,9 @@ cmdprops =
 };
 
 function onTrigger(player)
-    if (player:getVar("Buffs") == 0) then
+    if (player:getVar("Buff") == 0) then
         -- Toggle Buffs on..
-        player:setVar("Buffs", 1);
+        player:setVar("Buff", 1);
         
         -- Add bonus effects to the player..
         player:addStatusEffect(EFFECT_REGAIN,10,1,0);
@@ -30,17 +30,25 @@ function onTrigger(player)
         player:addMod(MOD_RDEF,150);
         player:addMod(MOD_DEF,150);
         player:addMod(MOD_MDEF,150);
-
     else
         -- Toggle Buffs off..
-        player:setVar("Buffs", 0);
+        player:setVar("Buff", 0);
 
         -- Remove bonus effects..
-        player:delStatusEffect(EFFECT_REGAIN,10,1,0);
-        player:delStatusEffect(EFFECT_REFRESH,50,0,0);
-        player:delStatusEffect(EFFECT_REGEN,50,0,0);
-	player:delStatusEffect(EFFECT_HASTE,100,0,0);
+        player:delStatusEffect(EFFECT_REGAIN);
+        player:delStatusEffect(EFFECT_REFRESH);
+        player:delStatusEffect(EFFECT_REGEN);
+	player:delStatusEffect(EFFECT_HASTE);
         
+        player:delMod(MOD_RACC,150);
+        player:delMod(MOD_RATT,150);
+        player:delMod(MOD_ACC,150);
+        player:delMod(MOD_ATT,150);
+        player:delMod(MOD_MATT,150);
+        player:delMod(MOD_MACC,150);
+        player:delMod(MOD_RDEF,150);
+        player:delMod(MOD_DEF,150);
+        player:delMod(MOD_MDEF,150);
 
     end
-end
+end;
