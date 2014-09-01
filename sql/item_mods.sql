@@ -19152,6 +19152,9 @@ INSERT INTO `item_mods` VALUES(10648, 169, 12); -- Movement speed +12%
 -- Chocobo Shirt 
 -- -------------------------------------------------------
 INSERT INTO `item_mods` VALUES(10293, 1, 2); -- DEF:2
+INSERT INTO `item_mods` VALUES(10293, 25, 50); -- ACC +50
+INSERT INTO `item_mods` VALUES(10293, 26, 50); -- RACC +50
+INSERT INTO `item_mods` VALUES(10293, 30, 50); -- MACC +50
 
 -- -------------------------------------------------------
 -- Leafkin Shield 
