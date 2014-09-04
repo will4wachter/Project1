@@ -26,11 +26,11 @@ end;
 function onTrigger(player,npc)
 	
 	if (npc:getAnimation() == 9) then
-		if (player:hasKeyItem(CRIMSON_ORB)) then
+		if (player:hasKeyItem(136)) then
 			player:startEvent(0x002a);
 		else
-			player:addKeyItem(CRIMSON_ORB));
-			player:messageSpecial(KEYITEM_OBTAINED,CRIMSON_ORB);
+			player:addKeyItem(136);
+			player:messageSpecial(KEYITEM_OBTAINED,136);
 
 		end
 	end	
