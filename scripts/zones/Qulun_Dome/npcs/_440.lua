@@ -30,7 +30,8 @@ function onTrigger(player,npc)
 			player:startEvent(0x0032);
 		end
 	else
-		player:messageSpecial(IT_SEEMS_TO_BE_LOCKED_BY_POWERFUL_MAGIC);
+		player:addKeyItem(46);
+		player:messageSpecial(KEYITEM_OBTAINED,46);
 	end
 	
 	return 1;
