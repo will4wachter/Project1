@@ -29,7 +29,10 @@ function onTrigger(player,npc)
 				player:messageSpecial(THE_3_ITEMS_GLOW_FAINTLY,SILVER_BELL,CORUSCANT_ROSARY,BLACK_MATINEE_NECKLACE);
 				npc:openDoor(20); -- retail timed
 			else
-				player:messageSpecial(IT_SEEMS_TO_BE_LOCKED_BY_POWERFUL_MAGIC);
+				player:addKeyItem(46);
+				player:addKeyItem(45);
+				player:messageSpecial(KEYITEM_OBTAINED,46);
+				player:messageSpecial(KEYITEM_OBTAINED,45);
 			end
 		else
 			player:messageSpecial(CANNOT_BE_OPENED_FROM_THIS_SIDE);
