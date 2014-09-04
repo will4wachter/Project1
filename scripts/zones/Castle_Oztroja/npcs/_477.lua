@@ -19,7 +19,11 @@ function onTrigger(player,npc)
 		player:messageSpecial(ITS_LOCKED);
 		return 1;
 	end	
-	
+	if(BrassA == 9 and npc:getAnimation() == 9) then
+		npc:openDoor(8); 
+	-- wait 1 second delay goes here
+		GetNPCByID(BrassDoor):openDoor(6);
+	end
 end;
 
 -----------------------------------
