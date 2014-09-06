@@ -49,6 +49,5 @@ function onTrigger(player)
         player:delMod(MOD_RDEF,150);
         player:delMod(MOD_DEF,150);
         player:delMod(MOD_MDEF,150);
-
-    end
+    end	
 end;
