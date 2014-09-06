@@ -32,7 +32,7 @@ function onTrigger(player,npc)
 
 	local SaveMySon = player:getVar("SaveMySon_Event");
 	
-	local ChocobosWounds = player:getQuestStatus(JEUNO, CHOCOBO_S_WOUNDS);
+	local ChocobosWounds = player:hasKeyItem(CHOCOBO_LICENSE) == true
 	
 	local mLvl = player:getMainLvl();
 	local mJob = player:getMainJob();
@@ -58,7 +58,7 @@ function onTrigger(player,npc)
 		player:startEvent(0x0000); 
 	
 	-- Save My Son
-	elseif(player:getQuestStatus(JEUNO, SAVE_MY_SON) == QUEST_AVAILABLE and ChocobosWounds == QUEST_COMPLETED) then
+	elseif(player:getQuestStatus(JEUNO, SAVE_MY_SON) == QUEST_AVAILABLE and ChocobosWounds == true) then
 		player:startEvent(0x00a4);
 	elseif(player:getQuestStatus(JEUNO, SAVE_MY_SON) == QUEST_ACCEPTED) then
 		if(SaveMySon == 0) then
@@ -70,9 +70,9 @@ function onTrigger(player,npc)
 		player:startEvent(0x0084);
 	
 	-- Chocobos Wounds
-	elseif(ChocobosWounds == QUEST_AVAILABLE) then
+	elseif(player:hasKeyItem(CHOCOBO_LICENSE) == true) then
 		player:startEvent(0x0040);
-	elseif(player:getVar("ChocobosWounds_Event") > 3) then
+	elseif(player:hasKeyItem(CHOCOBO_LICENSE) == false) then
 		player:startEvent(0x003f);
 		
 	-- Standard Dialogue?, Probably Wrong
