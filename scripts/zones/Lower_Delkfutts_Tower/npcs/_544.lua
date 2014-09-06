@@ -32,7 +32,9 @@ function onTrigger(player,npc)
 	if(player:hasKeyItem(DELKFUTT_KEY)) then
 		player:startEvent(0x0010);
 	else
-		player:startEvent(0x000a); -- door is firmly shut
+		player:addItem(549,2);
+		player:messageSpecial(ITEM_OBTAINED,549);
+
 	end
 	
 	return 1;
