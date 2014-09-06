@@ -15,14 +15,12 @@ require("scripts/zones/Castle_Oztroja/TextIDs");
 
 function onTrigger(player,npc)
 	
-	if(npc:getAnimation() == 9) then
-		player:messageSpecial(ITS_LOCKED);
-		return 1;
-	end	
-	if(BrassA == 9 and npc:getAnimation() == 9) then
-		npc:openDoor(8); 
-	-- wait 1 second delay goes here
-		GetNPCByID(BrassDoor):openDoor(6);
+	local DoorID = npc:getID() - 1;
+	local DoorA = GetNPCByID(DoorID):getAnimation();
+
+	if(DoorA == 9 and npc:getAnimation() == 9 then
+		npc:openDoor(6.5);
+		GetNPCByID(DoorID):openDoor(4.5);
 	end
 end;
 
