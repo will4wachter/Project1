@@ -38,14 +38,13 @@ end;
 -----------------------------------
 
 function onEffectGain(target,effect)
-	target:addMod(MOD_HP, 5000);
-	target:addMod(MOD_STR, 500);
-	target:addMod(MOD_DEX, 500);
+	target:addMod(MOD_HP, 20);
+	target:addMod(MOD_STR, 5);
+	target:addMod(MOD_DEX, 5);
 	target:addMod(MOD_CRIT_DMG_INCREASE, 100);
-	target:addMod(MOD_REGAIN, 100);
-	target:addMod(MOD_REGEN,100);
-	target:addMod(MOD_HASTE_MAGIC, 100);
-	target:addMod(MOD_DMG, -75);
+	target:addMod(MOD_SLEEPRES,10);
+	target:addMod(MOD_ACC,16);
+	target:addMod(MOD_RACC,16);
 end;
 
 -----------------------------------------
@@ -53,12 +52,11 @@ end;
 -----------------------------------------
 
 function onEffectLose(target,effect)
-	target:delMod(MOD_HP, 5000);
-	target:delMod(MOD_STR, 500);
-	target:delMod(MOD_DEX, 500);
+	target:delMod(MOD_HP, 20);
+	target:delMod(MOD_STR, 5);
+	target:delMod(MOD_DEX, 5);
 	target:delMod(MOD_CRIT_DMG_INCREASE, 100);
-	target:delMod(MOD_REGAIN, 100);
-	target:delMod(MOD_REGEN,100);
-	target:delMod(MOD_HASTE_MAGIC, 100);
-	target:delMod(MOD_DMG, -75);
+	target:delMod(MOD_SLEEPRES,10);
+	target:delMod(MOD_ACC,16);
+	target:delMod(MOD_RACC,16);
 end;
