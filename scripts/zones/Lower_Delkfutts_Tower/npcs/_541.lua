@@ -36,7 +36,8 @@ function onTrigger(player,npc)
 	local currentMission = player:getCurrentMission(SANDORIA);
 	
 	if(currentMission == APPOINTMENT_TO_JEUNO and player:getVar("MissionStatus") == 4 and player:hasKeyItem(DELKFUTT_KEY) == false) then
-		player:messageSpecial(THE_DOOR_IS_FIRMLY_SHUT_OPEN_KEY);
+		player:addKeyItem(1111);
+		player:messageSpecial(KEYITEM_OBTAINED,1111);
 	elseif(currentMission == APPOINTMENT_TO_JEUNO and player:getVar("MissionStatus") == 4 and player:hasKeyItem(DELKFUTT_KEY)) then
 		player:startEvent(0x0000);
 	else
