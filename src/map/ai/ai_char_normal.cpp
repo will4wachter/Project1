@@ -296,7 +296,7 @@ void CAICharNormal::ActionEngage()
 		{
 			if (distance(m_PChar->loc.p, m_PBattleTarget->loc.p) <= 30)
 			{
-				if (m_Tick > m_LastMeleeTime + m_PChar->m_Weapons[SLOT_MAIN]->getDelay())
+				if (((m_Tick - m_LastMeleeTime) > m_PChar->m_Weapons[SLOT_MAIN]->getDelay()) || map_config.remove_engage_delay == 1)
 				{
                     if (m_PChar->animation == ANIMATION_CHOCOBO)
                     {

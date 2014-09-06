@@ -871,6 +871,7 @@ int32 map_config_default()
     map_config.lightluggage_block = 4;
     map_config.max_time_lastupdate = 60000;
     map_config.newstyle_skillups = 7;
+	map_config.remove_engage_delay = 0;
     map_config.Battle_cap_tweak = 0;
     map_config.CoP_Battle_cap = 1;
     map_config.max_merit_points = 30;
@@ -1078,6 +1079,10 @@ int32 map_config_read(const int8* cfgName)
         {
             map_config.newstyle_skillups = atoi(w2);
         }
+		else if (strcmp(w1, "remove_engage_delay") == 0)
+			 {
+			map_config.remove_engage_delay = atoi(w2);
+			}
         else if (strcmp(w1,"Battle_cap_tweak") == 0)
         {
             map_config.Battle_cap_tweak = atoi(w2);

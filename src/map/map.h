@@ -101,6 +101,7 @@ struct map_config_t
 	float  player_mp_multiplier;	// Multiplier for max MP pool of player
 	float  drop_rate_multiplier;	// Multiplier for drops
     uint8  newstyle_skillups;       // Allows failed parries and blocks to trigger skill up chance.
+	int8   remove_engage_delay;		// Default is 0. This removes the engegement delay that happens just after killing a target, or after equipping a weapon.
     int8   Battle_cap_tweak;        // Default is 0. Globally adjust the level of level capped fights.
     int8   CoP_Battle_cap;          // Default is 0. Disable/enable old lv caps on Chains of Promathia mission battles.
 	uint8  max_merit_points;		// global variable, amount of merit points players are allowed
