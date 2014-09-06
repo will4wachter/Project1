@@ -30,10 +30,12 @@ function onTrigger(player,npc)
 			player:startEvent(0x0032);
 		end
 	else
-		player:addKeyItem(46);
-		player:addKeyItem(45);
-		player:messageSpecial(KEYITEM_OBTAINED,46);
-		player:messageSpecial(KEYITEM_OBTAINED,45);
+				player:addKeyItem(46);
+				player:addKeyItem(45);
+				player:addKeyItem(47);
+				player:messageSpecial(KEYITEM_OBTAINED,46);
+				player:messageSpecial(KEYITEM_OBTAINED,45);
+				player:messageSpecial(KEYITEM_OBTAINED,47);
 	end
 	
 	return 1;
