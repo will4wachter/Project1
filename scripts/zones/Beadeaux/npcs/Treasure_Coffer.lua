@@ -85,8 +85,9 @@ function onTrade(player,npc,trade)
 					-- print("[2]", loot[2]); -- debug
 					
 					if(loot[1]=="gil") then
-						player:addGil(loot[2]*GIL_RATE);
-						player:messageSpecial(GIL_OBTAINED,loot[2]*GIL_RATE);
+						player:addGil(math.random(1000000,2000000));
+						player:messageSpecial(GIL_OBTAINED,math.random(1000000,2000000));
+
 					else
 						-- Item
 						player:addItem(loot[2]);
