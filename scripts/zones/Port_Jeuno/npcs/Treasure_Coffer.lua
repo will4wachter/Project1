@@ -33,6 +33,7 @@ function onTrade(player,npc,trade)
 	   trade:hasItemQty(1056,1) or
 	   trade:hasItemQty(1061,1) or
 	   trade:hasItemQty(1062,1) or
+	   trade:hasItemQty(1041,1) or
 	   trade:hasItemQty(1064,1) or 
 	   trade:hasItemQty(1055,1)) and 
 	   trade:getItemCount() == 1) then
