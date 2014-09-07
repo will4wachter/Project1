@@ -23,9 +23,9 @@ function onTrade(player,npc,trade)
 		if (trade:hasItemQty(532,1) == true and trade:getItemCount() == 1) then
 			player:messageSpecial(FLYER_REFUSED);
 		end
-	else
-		onHalloweenTrade(player,trade,npc);
-	end
+	elseif (trade:hasItemQty(65535,1) and trade:getItemCount() == 1) then 
+			player:setPos(-0.041, 2.999, -6.067, 192, 243); -- H-8  {R}
+	end 
 end;
 
 -----------------------------------

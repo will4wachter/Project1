@@ -11,6 +11,9 @@ require("scripts/globals/settings");
 -----------------------------------
 
 function onTrade(player,npc,trade)
+	if (trade:hasItemQty(65535,1) and trade:getItemCount() == 1) then 
+			player:setPos(-0.041, 2.999, -6.067, 192, 243); -- H-8  {R}
+	end 
 end; 
 
 -----------------------------------

@@ -22,6 +22,7 @@ end;
 function onMobDeath(mob, killer)
 
     killer:addTitle(BEHEMOTHS_BANE);
+    killer:addGil(math.random(1000000,2000000));
 
     local Behemoth      = mob:getID();
     local King_Behemoth = 17297441;

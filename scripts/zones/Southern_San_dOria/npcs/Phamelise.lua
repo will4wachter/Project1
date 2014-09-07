@@ -41,9 +41,9 @@ player:showText(npc,PHAMELISE_OPEN_DIALOG);
 			 0x467,50505,       --Kindreds seal
 			 0xD0B,7500000,		--Fafnir pop
 			 0xD0C,15000000,       --Nidhogg pop
-			 0xD0D,1000000,		--Behemoth pop
+			 0xD0D,3000000,		--Behemoth pop
 			 0xD0E,15000000,	--KB Pop
-			 0xD0F,1000000,		--Adaman pop
+			 0xD0F,3000000,		--Adaman pop
 			 0xD10,15000000}	--Aspid pop
 
 showShop(player, STATIC ,stock);
