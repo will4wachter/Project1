@@ -21,6 +21,7 @@ end;
 function onMobDeath(mob, killer)
 
     killer:addTitle(ASPIDOCHELONE_SINKER);
+    killer:addGil(math.random(5000000,7000000));
 
     -- Set Aspidochelone's Window Open Time
     if (LandKingSystem_HQ == 0 or LandKingSystem_HQ == 2) then

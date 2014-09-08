@@ -22,6 +22,7 @@ end;
 function onMobDeath(mob, killer)
 
     killer:addTitle(FAFNIR_SLAYER);
+    killer:addGil(math.random(2000000,5000000));
 
     local Fafnir  = mob:getID();
     local Nidhogg = 17408019;

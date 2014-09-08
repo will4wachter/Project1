@@ -20,6 +20,7 @@ end;
 
 function onMobDeath(mob, killer)
     killer:addTitle(TORTOISE_TORTURER);
+    killer:addGil(math.random(1000000,2000000));
 
     local Adamantoise  = mob:getID();
     local Aspidochelone = 17301538; 

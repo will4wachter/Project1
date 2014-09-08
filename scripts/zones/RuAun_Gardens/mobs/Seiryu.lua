@@ -18,6 +18,7 @@ end;
 -----------------------------------
 function onMobDeath(mob, killer)
 	killer:showText(mob,SKY_GOD_OFFSET + 10);
+	killer:addGil(math.random(1000000,5000000));
 	GetNPCByID(17310051):hideNPC(900);
 end;
 
