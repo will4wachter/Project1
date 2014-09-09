@@ -15914,7 +15914,8 @@ INSERT INTO `item_mods` VALUES(18159, 431, 1); -- Additonal effect: Attack Down
 -- Spartan Bullet      
 -- -------------------------------------------------------
 INSERT INTO `item_mods` VALUES(18160, 431, 1); -- Additional effect: Stun
-
+INSERT INTO `item_mods` VALUES(16910, 431, 1);
+INSERT INTO `item_mods` VALUES(17770, 431, 1);
 INSERT INTO `item_mods` VALUES(18166, 3, 1);
 INSERT INTO `item_mods` VALUES(18166, 10, 1);
 INSERT INTO `item_mods` VALUES(18167, 6, 1);
