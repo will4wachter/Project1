@@ -18,7 +18,7 @@ end;
 -----------------------------------
 
 function onMobDeath(mob)
-	
+	killer:addGil(math.random(2000000,5000000));
 	SetServerVariable("[POP]King_Arthro",GetServerVariable("[POP]King_Arthro") + 1);
 	
 	if(GetServerVariable("[POP]King_Arthro") == 10) then

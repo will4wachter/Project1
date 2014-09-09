@@ -31,4 +31,5 @@ end;
 -----------------------------------
 
 function onMobDeath(mob, killer)
+    killer:addGil(math.random(800000,1000000));
 end;
