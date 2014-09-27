@@ -57,51 +57,41 @@ end;
 
 function onTrigger(player,npc)
 
-	--[[
-	if(player:getVar("ZeniStatus") == 0) then
-		player:startEvent(0x038c);
-	else
-		param = 2140136440; -- Defaut bitmask, Tier 1 ZNM Menu + don't ask option
-
-		-- Tinnin Path
-		if(player:hasKeyItem(MAROON_SEAL)) then
-			param = param - 0x38; -- unlocks Tinnin path tier 2 ZNMs.
-		end;
-		if(player:hasKeyItem(APPLE_GREEN_SEAL)) then
-			param = param - 0x1C0; -- unlocks Tinnin path tier 3 ZNMs.
-		end;
-		if(player:hasKeyItem(CHARCOAL_GREY_SEAL) or player:hasKeyItem(DEEP_PURPLE_SEAL) or player:hasKeyItem(CHESTNUT_COLORED_SEAL)) then
-			param = param - 0x200; -- unlocks Tinnin.
-		end;
-		-- Sarameya Path
-		if(player:hasKeyItem(CERISE_SEAL)) then
-			param = param - 0xE000; -- unlocks Sarameya path tier 2 ZNMs.
-		end;
-		if(player:hasKeyItem(SALMON_COLORED_SEAL)) then
-			param = param - 0x70000; -- unlocks Sarameya path tier 3 ZNMs.
-		end;
-		if(player:hasKeyItem(PURPLISH_GREY_SEAL) or player:hasKeyItem(GOLD_COLORED_SEAL) or player:hasKeyItem(COPPER_COLORED_SEAL)) then
-			param = param - 0x80000; -- unlocks Sarameya.
-		end;
-		-- Tyger Path
-		if(player:hasKeyItem(PINE_GREEN_SEAL)) then
-			param = param - 0x3800000; -- unlocks Tyger path tier 2 ZNMs.
-		end;
-		if(player:hasKeyItem(AMBER_COLORED_SEAL)) then
-			param = param - 0x1C000000; -- unlocks Tyger path tier 3 ZNMs.
-		end;
-		if(player:hasKeyItem(TAUPE_COLORED_SEAL) or player:hasKeyItem(FALLOW_COLORED_SEAL) or player:hasKeyItem(SIENNA_COLORED_SEAL)) then
-			param = param - 0x20000000; -- unlocks Tyger.
-		end;
-
-		if(player:hasKeyItem(LILAC_COLORED_SEAL) and player:hasKeyItem(BRIGHT_BLUE_SEAL) and player:hasKeyItem(LAVENDER_COLORED_SEAL)) then
-			param = param - 0x40000000; -- unlocks Pandemonium Warden.
-		end;
-
-		player:startEvent(0x038D,param);
-	end
-	]]
-
+if(player:hasKeyItem(1003) and player:hasKeyItem(1009) and player:hasKeyItem(1015)) then
+stock = {0xa14,50000,		
+	 0xa15,50000,
+	 0xa16,50000,
+	 0xa1e,50000,
+	 0xa1f,50000,
+	 0xa20,50000,
+	 0xa28,50000,
+	 0xa2a,50000,
+	 0xa29,50000,
+	 0xa11,100000,
+	 0xa12,100000,
+	 0xa13,100000,
+	 0xa1b,100000,
+	 0xa1d,100000,
+	 0xa1c,100000,
+	 0xa27,100000,
+	 0xa25,100000,
+	 0xa26,100000,
+	 0xa03,250000,
+	 0xa0f,250000,
+	 0xa10,250000,
+	 0xa1a,250000,
+	 0xa19,250000,
+	 0xa18,250000,
+	 0xa23,250000,
+	 0xa22,250000,
+	 0xa24,250000,
+	 0xa0d,1000000,		-- Tinnin
+	 0xa17,1000000,		-- Sarameya
+	 0xa21,1000000,		-- Tyger
+	 0xa0c,10000000}	-- Pandemonium Key
+ 
+showShop(player, STATIC, stock);
+end
 end;
 
 -----------------------------------
